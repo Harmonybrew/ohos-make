@@ -21,7 +21,7 @@ unzip -q toolchains-*.zip
 cd ../..
 
 # 设置交叉编译所需的环境变量
-export LLVM_BIN=$WORKDIR/ohos-sdk/linux/native/llvm/bin
+LLVM_BIN=$WORKDIR/ohos-sdk/linux/native/llvm/bin
 export CC=$LLVM_BIN/aarch64-unknown-linux-ohos-clang
 export CXX=$LLVM_BIN/aarch64-unknown-linux-ohos-clang++
 export LD=$LLVM_BIN/ld.lld
