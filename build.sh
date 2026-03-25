@@ -43,7 +43,7 @@ make -j$(nproc)
 make install
 cd ..
 
-# 添加代码签名
+# 进行代码签名
 cd $WORKDIR/make-4.4.1-ohos-arm64
 find . -type f \( -perm -0111 -o -name "*.so*" \) | while read FILE; do
     if file -b "$FILE" | grep -iqE "elf|sharedlib|ELF|shared object"; then
