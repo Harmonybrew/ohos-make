@@ -15,9 +15,11 @@ rm -rf *.tar.gz \
 # 准备 ohos-sdk
 curl -fL -o ohos-sdk-full_6.1-Release.tar.gz https://cidownload.openharmony.cn/version/Master_Version/OpenHarmony_6.1.0.31/20260311_020435/version-Master_Version-OpenHarmony_6.1.0.31-20260311_020435-ohos-sdk-full_6.1-Release.tar.gz
 tar -zxf ohos-sdk-full_6.1-Release.tar.gz
+rm -rf ohos-sdk-full_6.1-Release.tar.gz ohos-sdk/windows ohos-sdk/ohos
 cd ohos-sdk/linux
 unzip -q native-*.zip
 unzip -q toolchains-*.zip
+rm -rf *.zip
 cd ../..
 
 # 设置交叉编译所需的环境变量
