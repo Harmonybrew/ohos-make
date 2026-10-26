@@ -59,9 +59,9 @@ export PATH=/opt/make-4.4.1-ohos-arm64/bin:$PATH
 
 需要用一台 Linux x64 服务器来运行项目里的 build.sh，以实现 make 的交叉编译。
 
-这里以 Ubuntu 24.04 x64 作为示例：
+这里以 Ubuntu 26.04 x64 作为示例：
 ```sh
-sudo apt update && sudo apt install -y build-essential unzip
+sudo apt-get update && sudo apt-get install -y build-essential unzip
 git clone https://github.com/Harmonybrew/ohos-make.git
 cd ohos-make
 ./build.sh
